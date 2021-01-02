@@ -1,0 +1,199 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    color: rgba(0,0,0,0.8);
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ 
+.modal_Bg{
+    animation: 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s 1 normal forwards running k3;
+    scroll-behavior: smooth;
+    background-color: grey;
+    z-index: 800;
+    bottom: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.modal_box{
+    transform-origin: center bottom;
+    animation: 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s 1 normal forwards running k4;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 0px;
+    position: fixed;
+    
+
+}
+
+.modal_box__iner{
+    width: 678px;
+    height: 50%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px;
+    background: rgb(206, 198, 198);
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+}
+
+.modal_box_close_box{
+    margin: 18px;
+    position: absolute;
+    right: 0;
+}
+
+.close_box_button{
+    fill: inherit;
+    margin-top: 20vh;
+    margin-right: 20px;
+    padding: 0;
+    background: transparent;
+    overflow: visible;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+
+.modal_main_part{
+    background: white;
+    min-height: 695px;
+    height: 100%;
+    border-radius: 4px;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+
+.modal__inner_portion{
+    padding: 44px 56px;
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 auto;
+    text-align: center;
+}
+.modal_google {
+    font-size: 28px;
+}
+.medium_login_text{
+    color: rgb(8, 8, 8);
+    letter-spacing: -0.03em;
+    line-height: 32px;
+    font-size: 22px;
+    font-family: Courier;
+    font-weight: 400;
+}
+
+.SignIn_button_area{
+    margin-top: 50px;
+}
+.modal_google_text {
+    font-size: 18px;
+    position: relative;
+    bottom: 5px;
+}
+.login__button{
+    text-align: left;
+    padding: 10px;
+    background: rgba(255, 255, 255, 1);
+    display: inline-block;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    color: rgba(41, 41, 41, 1);
+    font-size: 18px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.shade__for_Hide{
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1));
+    height: 250px;
+    margin-top: -240px;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.message_box_for_signin{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.picture__round{
+    display: flex;
+}
+
+.picture__round_circle{
+    align-items: center;
+    display: flex;
+}
+
+.button__circle_user{
+    margin: 0;
+    padding: 0;
+    fill: inherit;
+    font-family: inherit;
+    letter-spacing: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.image__user{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    display: inline;
+}
+
+.homeBtn:hover {
+    border-bottom: 2px solid rgb(12, 188, 247);
+}
+
+
+
+.blogBtn:hover {
+    color: rgb(12, 188, 247);
+    border-bottom: 2px solid rgb(12, 188, 247);
+
+}
+
+@media(max-width: 1079.98px) and (min-width: 904px){
+
+    .modal_box__iner{
+        width: 678px;
+        height: auto;
+    }
+}
+
+@media(max-width: 903.98px) and (orientation: landscape){
+    .modal_box__iner{
+        width: 600px;
+        height: auto;
+    }
+
+}
+
+@media(max-width: 727.98px){
+
+    .modal_box__iner{
+        width: 100vw !important;
+        height: 100vh !important;
+        border-radius: 0;
+    }
+
+}

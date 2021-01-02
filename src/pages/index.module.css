@@ -1,0 +1,27 @@
+.main {
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* height: fit-content; */
+    /* flex-wrap: wrap; */
+    /* width: 80%;     */
+}
+
+.front {
+    /* display: flex;
+    justify-content: center; */
+    background: none;
+    padding: 80px;
+    max-width: 1200px;
+    font-family: serif;
+    font-size: 80px;
+    font-weight: 1000;
+    letter-spacing: -0.2px;
+    line-height: 1.1    ;
+    text-align: center;
+}
+
+.Head {
+  /* background: linear-gradient(rgb(27, 119, 119), purple); */
+  
+}
