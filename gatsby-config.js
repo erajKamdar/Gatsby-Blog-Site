@@ -9,26 +9,26 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: "7h9sgz6l1g95",
-        accessToken: "z2YAonZNZCh8F0HxfeTKZyMfJ10twBsu5t3--6vSGQw",
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 
       },
     },
-    {
-      resolve: "gatsby-plugin-firebase",
-      options: {
-        credentials: {
-          apiKey: process.env.API_KEY,
-          authDomain: process.env.AUTH_DOMAIN,
-          host : "cdn.contentful.com",
-          environment : "master",
-          downloadLocal : false,
-          forceFullSync : false,
-          pageLimit : 100,
-          useNameForId : true,
+    // {
+    //   resolve: "gatsby-plugin-firebase",
+    //   options: {
+    //     credentials: {
+    //       apiKey: process.env.API_KEY,
+    //       authDomain: process.env.AUTH_DOMAIN,
+    //       host : "cdn.contentful.com",
+    //       environment : "master",
+    //       downloadLocal : false,
+    //       forceFullSync : false,
+    //       pageLimit : 100,
+    //       useNameForId : true,
         
-        },
-      },
-    },
+    //     },
+    //   },
+    // },
   ],
 };
