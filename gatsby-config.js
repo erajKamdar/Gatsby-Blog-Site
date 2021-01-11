@@ -14,21 +14,21 @@ module.exports = {
 
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-firebase",
-    //   options: {
-    //     credentials: {
-    //       apiKey: process.env.API_KEY,
-    //       authDomain: process.env.AUTH_DOMAIN,
-    //       host : "cdn.contentful.com",
-    //       environment : "master",
-    //       downloadLocal : false,
-    //       forceFullSync : false,
-    //       pageLimit : 100,
-    //       useNameForId : true,
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: process.env.API_KEY,
+          authDomain: process.env.AUTH_DOMAIN,
+          host : "cdn.contentful.com",
+          environment : "master",
+          downloadLocal : false,
+          forceFullSync : false,
+          pageLimit : 100,
+          useNameForId : true,
         
-    //     },
-    //   },
-    // },
+        },
+      },
+    },
   ],
 };
